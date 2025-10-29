@@ -251,6 +251,7 @@ Diff on a directory is presented in alphabetical order, this means some operatio
 Those two operations have to happen in the reverse order.
 
 However, this behavior has changed as of ClearCase 7.1, which now shows the exact same change like so:
+
  -----\[ Object changed from \]-----
  < test/ 2001-04-16 jparanga
  ---
