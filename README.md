@@ -252,19 +252,18 @@ Those two operations have to happen in the reverse order.
 
 However, this behavior has changed as of ClearCase 7.1, which now shows the exact same change like so:
 
- -----\[ Object changed from \]-----
- < test/ 2001-04-16 jparanga
- ---
- > test/ 2003-03-07 tfisher
- -----\[ deleted \]-----
- < newtest/ 2003-03-07 tfisher
- -----\[ added \]-----
- > test.old/ 2001-04-16 jparanga
+    -----[ Object changed from ]-----
+    < test/ 2001-04-16 jparanga
+    ---
+    > test/ 2003-03-07 tfisher
+    -----[ deleted ]-----
+    < newtest/ 2003-03-07 tfisher
+    -----[ added ]-----
+    > test.old/ 2001-04-16 jparanga
 
 I think this avoids the order of operation issue.
 
 TBD, construct test cases and run on both 7.0 and 7.1 and figure out how to mitigate.
-
 
 
 
